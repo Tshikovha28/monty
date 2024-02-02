@@ -11,4 +11,3 @@ void f_print_top(stack_t **head, unsigned int counter)
     (void)counter;
     bus.lifi = 0;
 }
-

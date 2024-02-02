@@ -47,4 +47,3 @@ void add_to_queue(stack_t **head, int n)
         new_node->prev = aux;
     }
 }
-

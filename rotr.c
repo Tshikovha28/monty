@@ -24,4 +24,3 @@ void f_rotate_to_bottom(stack_t **head, __attribute__((unused)) unsigned int cou
     (*head)->prev = copy;
     (*head) = copy;
 }
-

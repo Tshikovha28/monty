@@ -24,4 +24,3 @@ void f_rotate_to_top(stack_t **head,  __attribute__((unused)) unsigned int count
     (*head)->prev = tmp;
     (*head) = aux;
 }
-
