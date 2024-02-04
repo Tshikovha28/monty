@@ -1,10 +1,10 @@
 #include "monty.h"
 bus_t bus = {NULL, NULL, NULL, 0};
 /**
-* main - monty code translator
-* @argc: number of arguments
+* main - monty code interpreter
+* @argc: arguments number
 * @argv: monty file location
-* Return: 0 positive results
+* Return: 0 success
 */
 int main(int argc, char *argv[])
 {
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	while (read_line > 0)
 	{
 		content = NULL;
-		read_line = getline(&content, &size, file);
+		read_line = fgets(content, size, file);
 		bus.content = content;
 		counter++;
 		if (read_line > 0)
